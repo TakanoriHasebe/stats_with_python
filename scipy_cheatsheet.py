@@ -1,6 +1,8 @@
 # ライブラリのimport
 import scipy as sp
 from scipy import stats
+# 表示桁数の指定
+%precision 3
 
 # scipyで合計値を算出
 sp.sum(fish_data)
