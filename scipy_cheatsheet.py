@@ -31,6 +31,12 @@ sp.amin(fish_data)
 # 中央値
 sp.median(fish_data)
 
+# 平方根
+sp.sqrt(num)
+
+# 相関行列
+sp.corrcoef(x, y)
+
 # 四分位点
 # 下から25%にくる値
 fish_data_3 = np.array([1,2,3,4,5,6,7,8,9])
