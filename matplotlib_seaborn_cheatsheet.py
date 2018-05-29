@@ -5,6 +5,7 @@ import pandas as pd
 %precision 3
 from matplotlib import pyplot as plt
 import seaborn as sns
+sns.set()
 # グラフをjupyter notebook内に表示
 %matplotlib inline
 

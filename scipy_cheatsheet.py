@@ -46,4 +46,8 @@ stats.scoreatpercentile(fish_data_3, 25)
 # 下から75%にくる値
 stats.scoreatpercentile(fish_data_3, 75)
 
+# stats.norm.pdf関数は確率密度を計算可能
+# loc : 平均値, scale : 標準偏差
+stats.norm.pdf(x = x, loc = 4, scale = 0.8)
+
 
