@@ -50,4 +50,8 @@ stats.scoreatpercentile(fish_data_3, 75)
 # loc : 平均値, scale : 標準偏差
 stats.norm.pdf(x = x, loc = 4, scale = 0.8)
 
+# 累積分布関数
+# loc : 平均値, scale : 標準偏差, x : 値
+stats.norm.cdf(loc = 4, scale = 0.8, x = 3)
+
 
