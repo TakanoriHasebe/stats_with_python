@@ -55,3 +55,18 @@ stats.norm.pdf(x = x, loc = 4, scale = 0.8)
 stats.norm.cdf(loc = 4, scale = 0.8, x = 3)
 
 
+株式会社エム・フィールド 吉野様
+
+長谷部 尊則です。
+
+面接に進みたく思います。
+
+
+
+
+
+
+
+
+
+
