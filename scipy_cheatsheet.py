@@ -54,6 +54,12 @@ stats.norm.pdf(x = x, loc = 4, scale = 0.8)
 # loc : 平均値, scale : 標準偏差, x : 値
 stats.norm.cdf(loc = 4, scale = 0.8, x = 3)
 
+# t検定
+# t検定をしたいデータを入れる
+stats.ttest_rel(after, before)
+
+# 対応のないt検定
+stats.ttest_ind(after, before, equal_var = False)
 
 
 
