@@ -65,9 +65,16 @@ cabin_df = cabin_df[cabin_df.Cabin != 'T']
 
 # 列名の中の文字ともう１つの列を指定して抜き出し
 before = paired_test_data.query('medicine == "before"')["body_temperature"]
-    
-    
-    
+
+# csv形式で読み込み
+df = pd.read_csv('test.csv')
+
+# 複数の列を削除
+drop_col = ["Sex", "Age", "SibSp", "Parch", "Ticket", "Fare", "Cabin", "Embarked"]    
+df.drop(drop_col, axis=1, inplace=True)
+
+# csv形式で出力
+df.to_csv("result.csv", index=False)
     
     
     
