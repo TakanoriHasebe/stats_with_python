@@ -1,6 +1,8 @@
 # ライブラリのimport
 import scipy as sp
 from scipy import stats
+import statsmodels.formula.api as smf
+import statsmodels.api as sm
 # 表示桁数の指定
 %precision 3
 
@@ -61,11 +63,15 @@ stats.ttest_rel(after, before)
 # 対応のないt検定
 stats.ttest_ind(after, before, equal_var = False)
 
+# 平均２乗誤差を利用
+# 2変数のモデル化
+lm_model = smf.ols(formula = "beer ~ temperature", data = beer).fit()
 
+# 推定結果
+lm_model.summary()
 
-
-
-
+# 気温のみのAIC
+lm_model.aic
 
 
 
