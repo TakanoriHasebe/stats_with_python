@@ -42,6 +42,10 @@ sns.jointplot(x="x", y="y", data=cov_data, color="black")
 # ペアプロット
 sns.pairplot(iris, hue='species', palette='gray')
 
+# 回帰直線
+# 網掛け部分は回帰直線の95%信頼区間を表している。
+sns.lmplot(x = "temperature", y = "beer", data = beer, scatter_kws = {"color":"black"}, line_kws = {"color":"black"})
+
 
 
 
