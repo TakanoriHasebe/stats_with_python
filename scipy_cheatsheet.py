@@ -73,6 +73,23 @@ lm_model.summary()
 # 気温のみのAIC
 lm_model.aic
 
+# 説明変数に価格だけを用いて、単回帰モデルを推定
+lm_dame = smf.ols("sales ~ price", sales).fit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
