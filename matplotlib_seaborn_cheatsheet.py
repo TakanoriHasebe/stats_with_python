@@ -46,6 +46,9 @@ sns.pairplot(iris, hue='species', palette='gray')
 # 網掛け部分は回帰直線の95%信頼区間を表している。
 sns.lmplot(x = "temperature", y = "beer", data = beer, scatter_kws = {"color":"black"}, line_kws = {"color":"black"})
 
+# こういった解析には、factorplotが便利です。
+sns.factorplot('Pclass','Survived',data=titanic_df, order=[1,2,3])
+
 
 
 
